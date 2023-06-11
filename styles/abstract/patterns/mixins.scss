@@ -1,0 +1,11 @@
+@use '../root' as var;
+
+@mixin ui-select($stroke) {
+  #{$stroke}: var.$ui-border;
+  width: 100%;
+  padding: 10px 35px 10px 15px;
+  background-color: #fff;
+  text-align: left;
+  cursor: pointer;
+  border-radius: var.$ui-border-radius;
+}

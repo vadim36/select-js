@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+     <meta charset="UTF-8">
+     <!--CEO tags-->
+     <meta name="author" content="Vadim Medvedev">
+     <meta name="descriptions" content="">
+
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+     <title>Document</title>
+     <link rel="preload" href="./css/main.css" as="style" onload="this.rel = 'stylesheet'">
+     <script src="./script/_main/index.js" defer></script>
+     <!--<link rel="shortcut icon" href="" type="image/x-icon">-->
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <h1>Стилизация и кастомная копия элемента Select</h1>
+        <section class="select-main-section" aria-label="for styled html element - select">
+            <div class="select-main-wrapper">
+                <select class="select-main">
+                    <option value="1">Первая опция</option>
+                    <option value="2">Вторая опция</option>
+                    <option value="3">Третья опция</option>
+                </select>
+            </div>
+        </section>
+        <section class="select-custom-section"
+                 aria-label="for custom clone of html element select">
+            <div class="select-custom" data-select>
+                <button class="select-custom__dropdown-button"
+                        data-dropdown-button
+                        aria-controls="[data-select]">Первая опция</button>
+                <ul class="select-custom__dropdown-list hidden" data-hidden data-dropdown-list>
+                    <li class="select-custom__dropdown-list-item"
+                        data-value="1"
+                        data-selected
+                        data-dropdown-list-item>
+                        Первая опция
+                    </li>
+                    <li class="select-custom__dropdown-list-item"
+                        data-value="2"
+                        data-dropdown-list-item>Вторая опция
+                    </li>
+                    <li class="select-custom__dropdown-list-item"
+                        data-value="3"
+                        data-dropdown-list-item>Третья опция
+                    </li>
+                </ul>
+                <input type="text" class="select-custom__input-value hidden"
+                       value="" data-value-item>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+
+</html>

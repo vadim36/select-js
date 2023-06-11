@@ -1,0 +1,6 @@
+@use './abstract' as var;
+@use './base/reset.scss';
+@use './base/type.scss';
+
+@use './_common.blocks/select-main_block.scss';
+@use './_common.blocks/select-custom_block.scss';

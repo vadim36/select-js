@@ -1,0 +1,17 @@
+@use '../abstract' as var;
+
+.select-main {
+  @include var.ui-select(outline);
+}
+
+.select-main-section {
+  padding: var.$selectSectionPadding;
+}
+
+.select-main-wrapper {
+  position: relative;
+}
+
+.select-main-wrapper::before {
+  @extend %ui-select-arrow;
+}
